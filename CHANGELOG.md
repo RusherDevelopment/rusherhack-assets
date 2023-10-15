@@ -148,4 +148,4 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
-Legacy changelogs (before version v2.0) (PUT LINK HERE).
+[Legacy changelogs](https://github.com/RusherDevelopment/rusherhack-assets/blob/main/legacy-changelog.md) (before version v2.0).
