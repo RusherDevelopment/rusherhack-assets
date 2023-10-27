@@ -3,7 +3,24 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
-## [Unreleased]
+## [v2.0-preview] - October 27th 2023
+
+- Introduced first implementation of the new Plugin system
+  - Developers who are interested in creating rusherhack plugins can reference the [example project](https://github.com/RusherDevelopment/example-plugin).
+  - The plugin system is currently not enabled by default
+    - Add the JVM Argument `-Drusherhack.enablePlugins=true` to enable the plugin system.
+    - **DO NOT ENABLE UNLESS YOU KNOW WHAT YOU ARE DOING** or are creating your own plugin.
+  - Plugin .jar files can be placed in `.minecraft/rusherhack/plugins/` folder
+    - This folder must be created manually
+- Improved ElytraFly
+  - Control mode with UseFireworks setting now works much better on 2b2t
+  - Removed debug message printing
+- Added GrimRocket setting to ElytraTweaks
+  - Increases the lifespan of firework rockets on 2b2t. Useful for traveling with ElytraFly
+- More features from legacy versions have been ported to v2.0
+- Fixed various bugs and crashes
+
+---
 
 ## [v2.0-preview] - October 7th 2023
 
