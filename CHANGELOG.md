@@ -3,6 +3,38 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0-preview] - December 2nd 2023
+
+- Added Windows
+  - Alt manager window
+    - Easily switch your Minecraft account
+  - Console window
+  - Relations window
+    - Manage Friends/Enemies
+  - Waypoints window
+- Module profile system
+  - Create different profiles for all module settings
+  - Useful for saving configurations for multiple servers
+  - Manage via the *config command (window coming soon)
+- Added AutoTrader module
+  - Automatically trade with villagers
+- Added AutoTrap module
+  - Automatically traps enemies with obsidian
+  - Ported from legacy rusherhack
+- Added AntiSpam module
+  - Filter spam out of the chat
+  - Ported from legacy rusherhack
+- Added FastBreak Packet mode
+- Added Filter setting to Hud Notifications
+- Added Firework setting to MiddleClick module
+- Added AutoClose setting to ExtraSign AutoSign
+- Added ability to move hud elements on the main menu in the HudEditor
+- Formatting of *coords command now uses the Position hud element
+- Fixed various bugs and crashes
+- [Uploaded javadocs for the rusherhack plugin api](https://rusherhack.org/api-javadocs/)
+
+---
+
 ## [v2.0-preview] - October 27th 2023
 
 - Introduced first implementation of the new Plugin system
