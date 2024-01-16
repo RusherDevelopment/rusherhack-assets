@@ -25,7 +25,9 @@ All notable changes to RusherHack be documented in this changelog.
   - Fixed sometimes rubberbanding on 2b2t
   - Added StrictExtend
 - NoFall
-  - Added Grim mode (works for 2b2t)
+  - Added Grim mode (works on 2b2t)
+- NoSlow
+  - Added Webs setting (works on 2b2t)
 - Improved SourceRemover
   - Works much better on 2b2t
   - Added Priority setting
@@ -69,6 +71,7 @@ All notable changes to RusherHack be documented in this changelog.
   - Fixed plugin .jar files being locked while the game is open
   - Deprecated methods in IPlugin interface
     - Plugin developers should now put metadata in rusherhack-plugin.json
+- Many other changes and bug fixes
 
 ---
 
