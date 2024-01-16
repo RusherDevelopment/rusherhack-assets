@@ -3,6 +3,75 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0] - January 15th 2024
+
+- Added support for Minecraft versions 1.20.2, 1.20.3, and 1.20.4.
+- Added AutoSorter module
+  - Automatically sort items in containers
+  - Requires Baritone
+- Added Chams module
+  - Modify the way entities are rendered
+- ESP
+  - Added Shader mode
+  - Fixed CSGO mode not working on storages
+  - Improved Box mode
+- AutoCrystal
+  - Fixed bug causing it to sometimes not place
+  - Other improvements/bug fixes
+- Search
+  - Improved speed of scanning chunks (thanks IceTank)
+  - Added Range setting to both Blocks and Entities
+- Scaffold
+  - Fixed sometimes rubberbanding on 2b2t
+  - Added StrictExtend
+- NoFall
+  - Added Grim mode (works for 2b2t)
+- Improved SourceRemover
+  - Works much better on 2b2t
+  - Added Priority setting
+- Added MainMenu module
+  - Cool looking shaders that get rendered on the main menu.
+  - You can modify them in the rusherhack/shaders/mainmenu/ folder
+- Added Logo hud element
+- Added Background module
+  - Particles
+  - BouncingLogo
+  - Gradient
+- Added blur shader
+  - HUD module -> Background -> Blur
+  - Theme module -> Blur
+- ViewModel
+  - Added Shader setting
+  - Added Shadow setting
+- Windows
+  - Added icons to each window
+  - Added Configs window
+  - Added TaskbarSide setting
+  - Now scale independently of game gui scale
+- Fixed line shader being buggy when far out
+- Added Baritone mode to AutoWalk
+- Added Baritone mode to AutoTunnel
+- Improved rusherhack screen icons
+- Improved background rendering of list hud elements
+- Added WaypointLocks setting to RotationLock
+- Added Abort bind setting to FastBreak Packet mode
+- Fixed module profile selection not being saved
+- Fixed various bugs in ExtraCraft AutoCraft
+- Fixed ExtraSign AutoSign on 2b2t
+- Fixed clicking self in Freecam kicking on 2b2t
+- Added Bees setting to ExtraTooltips
+- Added BlockEntityLimit to NoRender
+- Added Glow setting to HoleESP
+- Added MacroOutput setting to Hud Notifications
+- Plugins/API
+  - Added RusherHackAPI#getEventBus
+  - Added RusherHackAPI#interactions
+  - Fixed plugin .jar files being locked while the game is open
+  - Deprecated methods in IPlugin interface
+    - Plugin developers should now put metadata in rusherhack-plugin.json
+
+---
+
 ## [v2.0-preview] - December 2nd 2023
 
 - Added Windows
