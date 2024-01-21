@@ -3,6 +3,20 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0.1] - January 21st 2024
+
+- Fixed Shader ESP not working on some systems
+- Added AxisAlign setting to ElytraFly ObstaclePasser
+- Added OccludeDistance setting to NoRender ItemFrames
+- Fixed AutoTrader ignoring first trade
+- Fixed compatibility with OptiFabric
+- Fixed bugs in AutoCrystal
+- Fixed Nuker trying to mine non-solid blocks
+- Logs folder no longer gets cluttered with old log files, they get moved to an archive folder
+- Fixed various crashes and other bugs
+
+---
+
 ## [v2.0] - January 15th 2024
 
 - Added support for Minecraft versions 1.20.2, 1.20.3, and 1.20.4.
