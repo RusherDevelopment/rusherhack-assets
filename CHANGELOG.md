@@ -3,6 +3,78 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0.2] - March 1st 2024
+
+- Added GhostHand module
+  - Allows you to interact with containers through blocks
+- ElytraFly
+  - Improved Control mode with Fireworks
+  - Fixed AxisAlign settings
+  - Fixed sometimes not being able to interact with containers after using Bounce mode
+  - Fixed ObstaclePasser overshooting
+- ElytraTweaks
+  - Fixed being kicked after being still for 1 minute
+  - Fixed firework not despawning if not flying
+- AutoCrystal
+  - Added Damage Ratio option to Targeting Priority
+  - Adjusted rotations
+  - Fixed Anti Weakness sometimes not activating
+- AntiPacket
+  - Fixed packet names not being remapped
+- PacketLogger
+  - Added packet settings
+  - Added LogToFile setting
+- FastBreak
+  - Added Return setting
+  - Fixed various bugs and crashes
+- Aura
+  - Added Projectiles target
+  - Added ArmorStands target
+- CustomFont module
+  - Added ability to toggle shadows
+  - Added settings to toggle CustomFont in specific rusherhack screens
+- ESP
+  - Added Barrels to Storages targets
+  - Added ItemNames
+- Added ArmorStands target in Nametags
+- Added "Offline Login" button to Alt Manager window
+- Added Advanced setting to Timestamps
+  - Allows you to use custom date/time format
+- Configs
+  - Now saved in a way that should prevent corruption
+  - Fixed ExtraChest configs not being saved
+  - Fixed HitboxIgnore Blocks config not saving
+- Added module toggle color settings to HUD Notifications
+- Added AutoWither module
+- Added Custom mode to Time hud element Format
+- Added Timestamps setting to Console window
+- Added OpenAnywhere setting to Theme module
+- Added Self setting to ExtraTab colors
+- Added ability to MiddleClick Friends through blocks
+- Added ability to toggle waypoints via the Waypoints window
+- Improved AutoMine Feet mode
+- Improved efficiency of HotbarReplenish
+- Fixed not being able to reference items in commands
+- Fixed AutoTrader not opening level 1 trades
+- Fixed Sprint module rubberbanding when holding opposite movement keys
+- Fixed bug that would cause hud elements to move after resizing the game window
+- Fixed ViewModel Shader not outlining maps
+- Fixed AutoReconnect crash
+- Fixed various other crashes and bugs
+- Plugins/API
+  - Added new events
+    - EventAddChat
+    - EventChatMessage
+    - EventScreen
+    - EventNotification
+  - Added ability to register settings to Windows
+  - Fixed plugin modules not being controllable via command
+  - Exposed more functions in IRelationManager
+  - Refactored logging system
+  - Added ability to create graphics from an InputStream
+
+---
+
 ## [v2.0.1] - January 21st 2024
 
 - Fixed Shader ESP not working on some systems
