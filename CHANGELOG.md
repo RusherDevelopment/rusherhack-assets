@@ -45,8 +45,10 @@ All notable changes to RusherHack be documented in this changelog.
 - Improved AutoEat module
 - Added IllegalDisconnect setting to AutoReconnect
   - Fixes the bug on 2b2t where sometimes after disconnecting the player would remain in the server for a period of time
-- Improved NoSlow Grim mode
-  - Now works in main-hand
+- Improved NoSlow module
+  - Grim mode now works with items in main-hand
+  - Added sneak setting
+    - Works on 2b2t
 - Improved NoFall module
   - Renamed mode Bucket to Legit and added support for other types of items
 - Fixed Search module's IgnoreNaturalChests setting
