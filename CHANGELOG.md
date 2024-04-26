@@ -3,6 +3,65 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0.3] - April 26th 2024
+
+- Added TridentTweaks module
+  - Allows you to use the Trident's Riptide enchantment even outside of water/rain
+  - GrimDisabler
+    - Makes most movement modules bypass 2b2t's anticheat
+
+- Improved ElytraFly
+  - Added Boost setting to Bounce mode
+    - Works on 2b2t
+  - HighwayObstaclePasser now works when ElytraFly mode is set to OFF
+    - Allows you to use the obstacle passer with other modules like Flight
+
+- Rewrote Scaffold module
+  - Works much better on 2b2t
+  - Fixed desync on high ping
+
+- Rewrote AutoSurround module
+- Rewrote HoleFiller module
+- Rewrote AutoWeb module
+- Rewrote AutoTrap module
+- Rewrote AutoEXP module
+- Improved AutoCrystal module
+- Improved AutoTotem module
+  - Improved reliability
+  - Added AutoBlock setting
+  - Fixed a rare crash
+- Improved Phase module
+  - Added Pearl mode
+- Improved InventoryMove
+  - Added Grim mode
+- Improved Greeter module
+  - Added Filter setting
+  - Made delay only affect non-clientside messages
+- Improved Criticals module
+  - Added Grim mode
+- Added ability to pin Windows
+  - Shows window even when you are not in the Windows gui
+- Added AirPlace module
+- Improved AutoEat module
+- Added IllegalDisconnect setting to AutoReconnect
+  - Fixes the bug on 2b2t where sometimes after disconnecting the player would remain in the server for a period of time
+- Improved NoSlow Grim mode
+- Improved NoFall module
+  - Renamed mode Bucket to Legit and added support for other types of items
+- Fixed Search module's IgnoreNaturalChests setting
+- Fixed Spammer not working with commands
+- Fixed bug where macros would duplicate when config was reloaded
+- Fixed *baritone command
+- Fixed some rendering bugs in the gui's
+- Fixed various other crashes and bugs
+- Plugins/API
+  - Refactored most of the UI related code
+  - Improved the Theme api
+    - [Example theme](https://github.com/xyzbtw/rusherGUI)
+  - Command processor now supports Enum arguments
+
+---
+
 ## [v2.0.2] - March 1st 2024
 
 - Added GhostHand module
