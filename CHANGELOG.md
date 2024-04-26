@@ -54,6 +54,7 @@ All notable changes to RusherHack be documented in this changelog.
     - Works on 2b2t
 - Improved NoFall module
   - Renamed mode Bucket to Legit and added support for other types of items
+- Improved AutoMine Feet mode
 - Fixed Search module's IgnoreNaturalChests setting
 - Fixed Spammer not working with commands
 - Fixed bug where macros would duplicate when config was reloaded
