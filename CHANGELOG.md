@@ -9,11 +9,19 @@ All notable changes to RusherHack be documented in this changelog.
   - Allows you to use the Trident's Riptide enchantment even outside of water/rain
   - GrimDisabler
     - Makes most movement modules bypass 2b2t's anticheat
-- Improved ElytraFly
+- Improved ElytraFly module
   - Added Boost setting to Bounce mode
     - Works on 2b2t
   - HighwayObstaclePasser now works when ElytraFly mode is set to OFF
     - Allows you to use the obstacle passer with other modules like Flight
+- Improved Flight module
+  - Swapped modes Normal and Creative
+  - Added VerticalSpeed setting to mode Normal
+  - Improved AntiKick setting
+  - Added Acceleration setting
+- Improved BoatFly module
+  - Improved AntiKick setting
+  - Reorganized settings to be more clear
 - Rewrote Scaffold module
   - Works much better on 2b2t
   - Fixed desync on high ping
