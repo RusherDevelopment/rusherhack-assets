@@ -23,9 +23,9 @@ All notable changes to RusherHack be documented in this changelog.
 - Rewrote AutoTrap module
 - Rewrote AutoEXP module
 - Improved AutoCrystal module
-  -Should multiplace less
-  -Improved default config
-  -Added more render options
+  - Should multiplace less
+  - Improved default config
+  - Added more render options
 - Improved AutoTotem module
   - Improved reliability
   - Added AutoBlock setting
