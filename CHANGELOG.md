@@ -9,17 +9,14 @@ All notable changes to RusherHack be documented in this changelog.
   - Allows you to use the Trident's Riptide enchantment even outside of water/rain
   - GrimDisabler
     - Makes most movement modules bypass 2b2t's anticheat
-
 - Improved ElytraFly
   - Added Boost setting to Bounce mode
     - Works on 2b2t
   - HighwayObstaclePasser now works when ElytraFly mode is set to OFF
     - Allows you to use the obstacle passer with other modules like Flight
-
 - Rewrote Scaffold module
   - Works much better on 2b2t
   - Fixed desync on high ping
-
 - Rewrote AutoSurround module
 - Rewrote HoleFiller module
 - Rewrote AutoWeb module
@@ -34,11 +31,14 @@ All notable changes to RusherHack be documented in this changelog.
   - Added Pearl mode
 - Improved InventoryMove
   - Added Grim mode
+- Improved Velocity
+  - Added New Grim mode
+  - Added Jump mode
 - Improved Greeter module
   - Added Filter setting
   - Made delay only affect non-clientside messages
 - Improved Criticals module
-  - Added Grim mode
+  - Added Delay mode
 - Added ability to pin Windows
   - Shows window even when you are not in the Windows gui
 - Added AirPlace module
@@ -46,6 +46,7 @@ All notable changes to RusherHack be documented in this changelog.
 - Added IllegalDisconnect setting to AutoReconnect
   - Fixes the bug on 2b2t where sometimes after disconnecting the player would remain in the server for a period of time
 - Improved NoSlow Grim mode
+  - Now works in main-hand
 - Improved NoFall module
   - Renamed mode Bucket to Legit and added support for other types of items
 - Fixed Search module's IgnoreNaturalChests setting
