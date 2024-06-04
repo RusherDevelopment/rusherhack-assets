@@ -3,6 +3,31 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0.4] - June 2nd 2024
+
+- Added support for Minecraft versions 1.20.5 and 1.20.6
+- ElytraFly
+  - Added OnGround setting to Packet mode
+  - Improved Boost mode Automatic setting
+    - Now works on 2b2t
+  - Fixed obstacle passer not working on Bounce mode whilst the Packet setting is enabled
+- Added GrimDisabler setting to ElytraTweaks
+  - Requires firework rockets
+- Added AutoNametag module
+  - Automatically renames nearby entities using Nametag items
+- Improved Tracers
+- Added Smooth setting to Zoom
+- Fixed AutoDisconnect
+- Fixed AntiHunger queueing fall damage
+- Fixed EntityList hud element lag
+- Fixed ClickGui panel dragging
+- Fixed Trajectories line ending too early
+- Fixed Scaffold command
+- Removed commands that grabbed 2b2t statistics (2b2tlist, firstdeath, playtime, seen)
+  - This functionality can be brought back with [a community plugin](https://github.com/rfresh2/2b2t.vc-rusherhack)
+
+---
+
 ## [v2.0.3] - April 26th 2024
 
 - Added TridentTweaks module
