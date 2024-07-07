@@ -3,7 +3,27 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
-## [v2.0.4] - June 2nd 2024
+## [v2.0.5] - July 6th 2024
+
+- Added support for Minecraft 1.21
+- Rewrote FastBreak module
+- Rewrote and fixed AntiSpam module
+- Added Filter setting to ExtraChest Search
+  - Makes it so the Steal/Fill buttons only switch items that are highlighted by your search
+- Added TNTMinecarts setting to AutoDisconnect Proximity
+- Added ChatOutput setting to PacketLogger
+- Fixed compatibility with Entity Texture Features mod
+- Fixed various bugs and crashes on the 1.20.6 version
+- Fixed RichPresence ImageURL not working
+- Fixed Direction hud element yaw not being wrapped (why did no one report this to me)
+- Fixed Position hud element showing Nether coordinates in the End dimension
+- Fixed FastUse not applying to offhand
+- Plugins/API
+  - Added chunk processor/scanner
+
+---
+
+## [v2.0.4] - June 3rd 2024
 
 - Added support for Minecraft versions 1.20.5 and 1.20.6
 - ElytraFly
