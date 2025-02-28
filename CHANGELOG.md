@@ -3,9 +3,176 @@ All notable changes to RusherHack be documented in this changelog.
 
 ---
 
+## [v2.0.6] - February 28th 2025
+
+- Added support for Minecraft 1.21.4, 1.21.3, and 1.21.2
+
+- ClickGUI / Theme
+  - Added descriptions of modules and settings
+  - Fixed search bar showing hidden features
+  - Added display scaling for monitors with high resolution
+  - Added Screen setting to Theme Blur
+  - Added Scale setting to HUD Notifications
+
+
+- Added FakeFlying setting to ElytraTweaks
+  - Makes the server think you are flying when you have a chestplate equipped instead of an elytra
+  - Requires you to have a chestplate equipped and an elytra in your hotbar
+  - Does not use durability
+  - Works on 2b2t
+- AirPlace
+  - Added Grim setting
+    - Works on 2b2t
+  - Made compatible with Scaffold
+  - Made compatible with SourceRemover
+  - Fixed using fireworks
+- ExtraTooltips
+  - Added Slot setting to Maps
+    - Renders maps inside of container and inventory slots
+  - Added Summary setting to Shulkers
+    - Shows the most common item inside the shulker box
+  - Now only renders after the mouse is moved
+    - Improves visibility when just trying to quickly peer at items in a chest
+- ExtraChat
+  - Added PlayerHeads setting
+  - Rewrote Mentions setting
+    - Added FriendColor setting
+  - Rewrote most of the module
+    - Should be more compatible with other mods that modify chat
+  - Fixed chat rendering under armor
+- Scaffold
+  - Improved compatibility with AirPlace when using Expand
+  - No longer attempts to place if the player is manually sneaking
+  - Updated default settings to work on 2b2t
+- AutoSorter
+  - Added AutoClose setting
+  - Improved algorithm
+- Borders module
+  - Added Axis setting
+  - Added Beacon setting
+- FastBreak
+  - Improved rotations
+  - Improved DoubleBreak setting
+  - Added render for InstaRebreak
+  - Improved compatibility with Nuker
+- ESP Tunnels setting
+  - Rewrote tunnel detection algorithm
+    - Configurable Strictness setting
+  - Added Vertical setting
+  - Added QUADS render mode
+    - Renders tunnels as continuous 3d boxes
+    - This mode is quite resource intensive
+  - Improved performance of LINES render mode
+- ElytraFly
+  - Fixed AutoWalk not working if disabling ElytraFly during ObstaclePasser run
+  - Fixed bug in ObstaclePasser AxisAlign
+  - Fixed Bounce mode not working while Freecam is enabled
+  - Fixed ObstaclePasser desync
+- AntiSpam
+  - Added Combine setting
+  - Fixed Frequency setting blocking all messages
+- NoRender
+  - Added BeaconBeams setting
+  - Added ToastNotifications setting
+  - Added MapDecorations setting
+  - Included primed TNT in FallingBlocks setting
+- PvpInfo module
+  - Added IgnoreFriends setting to VisualRange
+  - Fixed Pearls setting prediction
+- NewChunks module
+  - Improved accuracy of Palette mode
+  - Fixed Palette mode not working if Lithium mod is installed
+- Spammer module
+  - Added some placeholders
+    - <random_player> - name of a random online player
+    - <random_player_friend> - name of a random online friend
+    - <random_player_nonfriend> - name of a random online player who isn't on the friends list
+    - <random_player_enemy> - name of a random online enemy
+- AutoDisconnect
+  - Fixed IllegalDisconnect setting
+  - Fixed YLevel setting
+  - Fixed TotemCheck threshold
+- NoFall Legit mode
+  - No longer uses blocks with no collision
+  - Improved block placements
+  - Fixed sometimes not being able to retrieve water
+
+
+
+- Rewrote Quiver module
+- Added NightVision setting to FullBright
+- Added Portal setting to Avoid module
+- Added Speed setting to Swing module
+- Added Beds setting to AutoMount
+- Added Filter setting to BindList hud element
+- Added TPSSync setting to EntitySpeed
+- Added Enemies setting to Tracers Targets
+- Added Rotate setting to Freecam
+- Added OnlyPitch setting to FreeLook
+- Added DurabilityPriority setting to AutoTool
+- Added ActivatedSpawners setting to Search Blocks
+- Added SpawnerActivation setting to Borders module
+- Added Shadow settings to CustomFont module
+- Added PauseWhileEating setting to AutoWalk
+- Added OnlySprinting setting to Parkour module
+- Added ServerMessages setting to Notifications module
+
+- Optimized memory usage of 2d renderer
+- Rewrote BoatFly AntiKick
+- Improved *hclip and *vclip commands
+- Improved BowSpam module
+- Improved AutoFish
+- Trajectories module now works with BowAimbot
+- Moved RichPresence module to Client category
+- Nametags now shows enemy colors
+- InventoryCleaner can now clean in some other screens instead of only inventory
+- Improved ExtraChest command suggestions
+- Improved InventoryCleaner command suggestions
+
+
+- Fixed Search Alert and Sound settings
+- Fixed RotationLock Hard setting not working in all directions
+- Fixed Greeter sending duplicate messages on some servers
+- Fixed bugs in Phase Pearl mode
+- Fixed not being able to bind to WORLD1 and WORLD2 keys
+- Fixed bug rendering pinned windows
+- Fixed some settings in HUD module duplicating on *reload
+- Fixed RequirePickaxe setting in AutoMine
+- Fixed AutoEXP
+- Fixed support on Windows ARM systems
+- Fixed ForcePlace not placing item frames
+- Fixed ExtraTab not working with some other mods installed
+- Fixed bugs with ExtraCraft AutoCraft
+- Fixed Time hud element not showing actual in-game time
+- Fixed rendering bugs when using with Iris mod
+- Fixed Waypoints sometimes not rendering
+- Fixed PacketLogger reading static fields
+- Fixed Reverse Step
+
+
+- Plugins/API
+  - Added Core Plugins
+    - Plugins that are loaded before the game is started
+    - Supports creating custom Mixins
+    - Example implementation: https://github.com/RusherDevelopment/example-core-plugin
+  - Added text component support to the notification manager
+  - Added IRenderer2D#_drawTextureRectangle method
+  - Added PlayerMessage class for parsing senders of chat messages
+  - Added EventInputTick
+  - Added support for sub commands with depth > 2
+
+
+## [v2.0.5] - July 15th 2024
+
+- Added NewChunks mode Pallete
+  - Working on 2b2t and other servers on modern versions of the game
+  - Credit to etianl and rfresh
+- Fixed Tracers transparency setting not affecting Search tracers
+- Fixed various other bugs and crashes
+
 ## [v2.0.5] - July 6th 2024
 
-- Added support for Minecraft 1.21
+- Added support for Minecraft 1.21 and 1.21.1
 - Rewrote FastBreak module
 - Rewrote and fixed AntiSpam module
 - Added Filter setting to ExtraChest Search
