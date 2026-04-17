@@ -1,5 +1,367 @@
 # Changelog
+
 All notable changes to RusherHack be documented in this changelog.
+
+---
+
+## [v2.0.7] - February 2nd 2026
+
+This update for v2.0.7 will come in 2 parts. This first release is for Minecraft 1.20.1-1.21.4
+
+##### The next part will be for Minecraft 1.21.11 and should release April/May. After which, support for Minecraft versions lower than the latest will be discontinued in order to improve maintainability and to avoid having more situations where RusherHack is far behind the latest Minecraft version
+
+- Added Language module
+    - Allows you to change the language of RusherHack's interfaces
+    - If you want to help translate RusherHack to a different language, you can do so
+      here: https://crowdin.com/project/rusherhack/
+        - Major contributors to a specific language can receive an exclusive translator cape with the country's flag
+        - JVM argument for viewing bleeding edge translations before approval: -Drusherhack.locale.bleedingEdge=true
+
+- ElytraFly
+    - Added Firework mode
+        - Replaces old fireworks setting in Control mode
+        - Leave Strict setting enabled for 2b2t
+    - Rewrote ObstaclePasser
+        - Added X and Z align settings
+        - Fixed not working if baritone was #paused
+        - Made compatible with ElytraTweaks
+    - Fixed deadlock with Bounce mode's Delay setting
+    - Added AutoWalk setting to Bounce mode
+    - Fixed Bounce not working while eating
+    - Fixed Control Aim mode
+
+- ClickGUI
+    - Added Dimming setting to improve readability
+        - Dims unfocused parts of the panel
+    - Search Bar will now find item when pressing Enter key
+    - Improved Color Picker
+    - Fixed unpausing the game in singleplayer
+    - Fixed setting tooltips
+    - Fixed color picker crashing if paste button is clicked with nothing in clipboard
+    - Fixed font overlapping issues with searchbar text with vanilla font
+
+- CustomFont
+    - Fonts that don't support the current language are now hidden
+    - Now gets automatically disabled on systems with Intel GPU
+        - Intel's GPU drivers have an obscure bug that causes a crash with the font renderer
+
+- ExtraCraft
+    - Added to 1.21.4
+    - Fixed many bugs
+
+- ExtraTooltips
+    - Added Positioning setting
+        - Allows you to have the items rendered directly inside of the vanilla tooltip
+    - Rewrote map caching system
+    - ShulkerSummary setting now works in Inventory HUD element
+    - Improved handling of nested tooltips
+    - Maps Slot setting
+        - Added stack counts
+        - Fixed maps rendering in slots in container tooltips even when setting is disabled
+
+- Moved ExtraTooltips ChatEmbed setting to ExtraChat ImagePreview
+
+- EntityList HUD element
+    - Added Item whitelist/blacklist
+    - Fixed duplicate entries when players die and respawn on some servers
+    - Improved performance
+
+
+- Added ChunkPos setting in NewChunks Alerts
+- Added AutoReauth setting to Alt Manager
+    - Fixes "Invalid session" errors that sometimes happen when you join Minecraft servers
+
+- Configs
+    - Config manager now uses atomic operations when saving (if supported)
+        - Will reduce chance of config files getting corrupted
+    - Added Config module to configure the auto save interval
+    - Added persistent module configs which allow you to have the same config for a module across different profiles
+        - TODO: ADD COMMAND HERE
+
+    - Fixed Configs window resetting modules in the Client category
+
+- ESP
+    - Added Square setting in CSGO mode
+    - Added Range setting to Entities
+    - Fixed Shader mode trying to highlight some block entities that it shouldn't be
+    - Fixed block entities not being highlighted if they are the only thing on screen
+    - Fixed Shader mode not working on invisible entities
+
+- Aura
+    - Now pauses AutoEat
+    - Added HitDelay Mode
+    - Improved compatibility with Criticals Delay mode
+    - Fixed compatibility with AutoTrap
+
+- Rewrote AutoWither
+    - Added AirPlace support
+    - Added different place modes
+
+- Loader
+    - Updated HWID algorithm
+        - Should be more consistent on Linux systems
+    - Added rusherhack.forceReleaseBuild JVM argument
+        - Allows rusherhack+ users to use the latest stable (normal) build
+    - Added new error message when FlatPak environment is detected
+    - Added an icon to be visible in launchers and modmenu mod
+
+- Added AutoShear module
+    - Replaces *shear command
+
+- Rewrote *breed command
+    - Now works on 2b2t
+
+- Added *peek enderchest command
+
+- AutoArmor
+    - Added PiglinGold setting
+    - Fixed trying to use Curse of Binding armor
+    - Fixed trying to use unglideable Elytras
+    - Added Elytras setting
+    - Fixed desync with high ping on 2b2t
+
+- Added "exit" as alias for *shutdown command
+
+- Rewrote Logo HUD element
+    - Added custom image mode
+
+- AutoDisconnect
+    - Fixed various crashes
+    - Added Proximity Portal setting
+    - Added TotemCheck to Lethal Crystal setting
+    - Added ability to speecify Y coordinate for the Coordinates setting
+
+- Renamed Notifications module to Notifier
+    - Added title support to ServerMessage setting
+
+- Added NoJumpDelay module
+
+- SourceRemover
+    - Added AirPlace support
+
+- AirPlace
+    - Is now only active while block is being held
+    - Fixed not placing in liquids
+    - Made compatible with other modules that place blocks
+
+- Added Custom setting to ChatAppend module
+- Added Name HUD element
+
+- Console Window
+    - Added up/down command history
+
+- AutoWalk
+    - Added setting to only walk while in flight
+
+- HUD
+    - Fixed bug with HUD Editor panel font rendering
+    - Fixed list HUD elements not being resorted after font change
+    - Improved performance of list HUD elements
+    - Fixed crash when joining server with HUD background blur enabled
+
+- Search
+    - Added Items setting
+        - Allows you to search for specific item entities
+    - Fixed IllegalBedrock false positives in the end
+    - Fixed rare game freezing when using Alert setting
+
+- Scaffold
+    - Fixed trying to place on non-solid blocks
+    - Fixed inaccurate hit vectors on blocks w/ dynamic shapes
+    - Disabled instant rotations by default
+        - Only works on 2b2t when used with ViaFabric with version set <=1.20.6
+    - Improved diagonal placements when instant rotations are disabled
+    - Fixed attempting to place blocks without collision
+    - Fixed compatibility with NoGlitchBlocks
+
+- AutoSorter
+    - Added ChestOpenDelay setting
+    - Fixed removing target chests if they are being emptied by hopper
+    - Fixed rare crash
+
+- Rotations
+    - Fixed not properly applying rotation speed when more than one module is rotating in the same tick
+    - Fixed not updating travel pitch
+
+- AutoCrystal
+    - Fixed rotating even if player has no ender crystals
+    - Fixed autoswitch bugs
+
+- FastBreak
+    - Fixed packet mode trying to mine water
+    - Improved Grim setting after 2b2t's patch
+    - Fixed packet mode continuing to render blocks that it failed to break
+    - Fix InstantRebreak rendering in liquids
+
+- ExtraChest
+    - Rewrote logic
+    - Added Buttons UseConfigs setting
+    - Removed buttons from recipe screens
+
+- NoRender
+    - Added ActionText setting to UI
+    - Added PotionInventory setting to UI
+
+- AutoTool
+    - Improved Priority setting
+    - Fixed attempting to swap from mainhand even if mainhand tool is good enough
+    - Fixed compatibility with Baritone
+    - Fixed MinDurability not working on instantly mineable blocks
+
+- AutoTrap
+    - Fixed not placing blocks with Rotate is disabled
+    - Fixed trying to trap Freecam camera entity
+
+- Nametags
+    - Fixed text overlapping with vanilla font
+    - Improved color settings
+    - Fixed not being able to zoom in on nametags
+    - Fixed armor overlapping bug
+
+- Rewrote AutoReply module
+
+- Rewrote ClientSideTime
+    - Fixed compatibility with Time HUD element and Announcer
+    - Added RealLife setting
+
+- SkinBlink
+    - Fixed on 1.21.4
+    - Made layers toggleable
+    - No longer tries to toggle Cape
+
+- AutoTunnel
+    - Fixed being offset when standing on non-full size block
+    - Removed built in FastBreak
+
+- Durability HUD element
+    - Added Offhand setting
+    - Added Percentage setting
+
+- Fixed Translate module
+    - Now uses a new API
+    - Added ability to connect to a custom LibreTranslate server
+
+- Fixed Queue HUD element
+    - Now uses api.2b2t.vc API
+
+- Ignite
+    - Added Self option to Targets
+    - Now can use fire charges
+
+- LagDetector
+    - Now disabled in singleplayer
+    - Color is now customizable
+
+- InventoryMove
+    - Fixed many bugs
+    - Added Windows setting
+
+- Inventory HUD element
+    - Fixed alpha color not working
+
+- MiddleClick
+    - Added BlockCheck setting to Firework setting
+    - Improved inventory actions
+
+- PacketLogger and AntiPacket
+    - Added Toggle All button
+    - Added search bars
+
+- ViewModel
+    - Fixed banners rendering twice
+    - Fixed compatibility with FutureClient
+
+- Waypoints
+    - Fixed tracer not going to interdimensional coords
+    - Fixed bug where waypoints would not render depending on the direction the player is facing
+
+- ExtraTab
+    - Fixed OnlyShow removing yourself from tablist
+    - Fixed name colors not working on servers with non-vanilla text components
+
+- Command Suggestions
+    - Fixed banners block argument not containing wall banners
+    - Improve suggestions for color setting values
+    - Improve suggestions for enum setting values
+
+
+- Added Dynamic Camera mode to FreeLook
+- Added Tracers Self setting
+- Rewrote SafeWalk Sneak Strict setting
+- Added ability to modify HUD element and Window settings via command
+- Added Both mode to Speed HUD element
+- Added Statistics setting to FPS HUD element
+- Added Short setting to OnlineTime HUD element
+
+- Llamas are now considered a neutral entity in modules
+- Baby Piglins are no longer treated as hostile
+- Updated default Window positions
+- Phase's Pearl mode will now use ender pearls from the player's inventory
+- AutoTotem now works whilst in containers
+- Cape textures are now only downloaded when needed.
+- Cancel BlockTweaks Abort on item switch
+- Added OnlyFriends setting to HitboxIgnore Players
+- RotationLock Yaw now uses -180 to 180
+- Improved *nuker whitelist command
+
+- Fixed Sprint Rage Strict not working on newer Minecraft versions
+- Fixed AutoMount and AutoNametag not working on 2b2t
+- Fixed performance issues when using alongside a mod that uses Satin library
+- Fixed command parser failing with 2 arguments with same name
+- Fixed StringSetting value updating during command suggestion parsing
+- Fixed blur shader not working correctly on 1.21.4
+- Fixed FullBright NightVision setting
+- Fixed crash when launching game with mods that add new blocks
+- Fixed Announcer spamming XP messages
+- Fixed some modules not working at world height
+- Fixed some modules trying to place blocks behind world border
+- Fixed crash in AutoWeb
+- Fixed dimension checks on servers that sends custom levels
+- Fixed AntiQuit Close crash
+- Fixed Avoid Portals only working on some conditions
+- Fixed Jesus working in spectator mode
+- Fixed the Flight removing flight while in spectator mode
+- Fixed ExtraChat Mentions highlighting removed friends
+- Fixed bugs in AntiSpam module
+- Fixed game crashing when loading corrupted mappings
+- Fixed numerous other crashes and bugs
+- Fixed Time HUD element
+- Fixed Trajectories path for thrown items
+- Fixed *namemc command not working on some platforms
+- Fixed *nuker whitelist command not adding all types of blocks from groups
+
+
+- API/Plugins
+    - Added ability to create custom categories for modules
+        - ModuleCategory#getOrRegister
+    - Added ListSetting
+    - Added ModeSetting
+        - Enhanced version of EnumSetting
+    - Added SplitView to window api
+    - Added ability to popup windows on any screen
+    - Added ItemRegistry, BlockRegistry, EntityTypeRegistry
+    - Added RusherHackAPI#getFieldRegistry
+        - Allows plugins to access some fields of internal rusherhack features
+    - Added RusherHackAPI#getConfigManager
+    - Added RusherHackAPI#getWaypointManager
+    - Added AllowExternalModulesInDefaultCategories setting to ClickGUI
+    - Added EventPlayerConnection
+    - Added EventTravel
+    - ClickGUI now sorts external modules
+    - Added preliminary support for accesswideners in core plugins
+    - Added internal events
+    - Separateed Module.drawn from Module.hidden so now it is possible to *drawn an external module without hiding it
+      from ClickGUI
+    - Improved EventInputTick
+        - Easily control input states of the player
+    - Commands
+        - Added ability to register custom command argument parsers
+        - Added a new and improved method of registering sub commands
+        - Entire command api is now included and unobfuscated
+        - Fixed bug with Enum argument parser
+    - Added ContainerUtils
+    - Added ItemUtils
+    - Fixed HUD element backgrounds rendering even if IHudElement#shouldDrawBackground is false
 
 ---
 
